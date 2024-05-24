@@ -1,0 +1,116 @@
+:root {
+    /* Padding */
+    --padding-40: 2.5rem;
+    /* Colors */
+    --clr-white: #fff;
+    /* Transformation Duration */
+    --transition-4: 0.4s;
+}
+
+/* Global */
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* Utilities */
+.section-padding {
+    padding-top: var(--padding-40);
+}
+
+.transition-4 {
+    transition: all var(--transition-4) ease;
+}
+
+.card-content {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Start of Home Section */
+.home {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/home-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.home-header {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.home-text {
+    margin-bottom: 3.125rem;
+    font-size: 17px;
+}
+
+.service-btn {
+    padding: 9px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--clr-white);
+    background-color: var(--clr-white);
+    font-size: 17px;
+}
+
+.service-btn:hover {
+    --bs-btn-hover-border-color: var(--clr-white);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* End of Home Section */
+
+/* Start of Services Section */
+.service-card {
+    padding: var(--padding-40) 15px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+}
+
+.service-card-img {
+    width: 120px;
+    height: 120px;
+}
+
+.service-card-img img {
+    aspect-ratio: 1 / 1;
+}
+
+/* End of Services Section */
+
+/* Start of Portfolio Section */
+.portfolio-card {
+    padding-bottom: 1.25rem;
+    border-radius: 7px;
+}
+
+.portfolio-card-img img {
+    aspect-ratio: 16 / 9;
+}
+
+/* End of Portfolio Section */
+
+/* Start of Contact Section */
+/* End of Contact Section */
+
+/* Start of About Section */
+/* End of About Section */
