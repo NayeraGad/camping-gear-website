@@ -1,9 +1,16 @@
 :root {
+    /* Margin */
+    --margin-10: 0.625rem;
     /* Padding */
+    --padding-10: 0.625rem;
+    --padding-20: 1.25rem;
     --padding-40: 2.5rem;
+    /* Border Radius */
+    --border-r-5: 5px;
     /* Colors */
     --clr-white: #fff;
     /* Transformation Duration */
+    --transition-4: 0.2s;
     --transition-4: 0.4s;
 }
 
@@ -11,6 +18,7 @@
 
 body {
     background-color: #f2f2f2;
+    color: black;
     font-family: "Poppins", sans-serif;
 }
 
@@ -22,9 +30,25 @@ h4 {
     font-size: 18px;
 }
 
-a {
+p {
+    margin-bottom: 0;
+}
+
+span {
+    display: inline-block;
+}
+
+a,
+.navbar a {
+    color: var(--clr-white);
     text-transform: capitalize;
     text-decoration: none;
+}
+
+a:hover,
+.navbar a:hover,
+.navbar-nav .nav-link.active {
+    color: #ddd;
 }
 
 img {
@@ -36,14 +60,56 @@ img {
     padding-top: var(--padding-40);
 }
 
+.transition-2 {
+    transition: all var(--transition-2) ease;
+}
+
 .transition-4 {
     transition: all var(--transition-4) ease;
+}
+
+.card-shadow {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
 }
 
 .card-content {
     padding-right: 15px;
     padding-left: 15px;
 }
+
+.border-r-5 {
+    border-radius: var(--border-r-5);
+}
+
+/* Start of Navbar */
+.navbar,
+.offcanvas {
+    background-color: #333;
+}
+
+.navbar-brand {
+    --bs-navbar-brand-font-size: 24px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 300px;
+}
+
+.offcanvas.offcanvas-start {
+    top: 60px;
+}
+
+.nav-link {
+    padding-top: var(--padding-20);
+    padding-bottom: var(--padding-20);
+    font-size: 18px;
+}
+
+/* End of Navbar */
 
 /* Start of Home Section */
 .home {
@@ -59,6 +125,10 @@ img {
     font-size: 40px;
 }
 
+.text-shadow {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
 .home-text {
     margin-bottom: 3.125rem;
     font-size: 17px;
@@ -66,7 +136,6 @@ img {
 
 .service-btn {
     padding: 9px 20px;
-    border-radius: 5px;
     border: 2px solid var(--clr-white);
     background-color: var(--clr-white);
     font-size: 17px;
@@ -82,8 +151,6 @@ img {
 /* Start of Services Section */
 .service-card {
     padding: var(--padding-40) 15px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
 }
 
 .service-card-img {
@@ -99,7 +166,7 @@ img {
 
 /* Start of Portfolio Section */
 .portfolio-card {
-    padding-bottom: 1.25rem;
+    padding-bottom: var(--padding-20);
     border-radius: 7px;
 }
 
@@ -109,8 +176,74 @@ img {
 
 /* End of Portfolio Section */
 
+/* Start of About Section */
+.about-card-title {
+    margin: 1.875rem 0 var(--margin-10);
+}
+
+.about-list {
+    position: relative;
+    left: -10px;
+}
+
+/* End of About Section */
+
 /* Start of Contact Section */
+.contact-content {
+    margin-top: 3.75rem;
+    margin-bottom: 5.625rem;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list span {
+    margin-bottom: var(--margin-10);
+}
+
+.contact-list span i {
+    margin-right: var(--margin-10);
+    color: #7a7a7a;
+}
+
+input,
+textarea {
+    padding: var(--padding-10);
+    border: 1px solid #bfbfbf;
+}
+
+input {
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+.send-btn {
+    margin-top: var(--margin-10);
+    padding: var(--padding-10) var(--padding-20);
+    background-color: #333;
+    border: none;
+}
+
+.send-btn:hover {
+    background-color: #525252;
+}
+
 /* End of Contact Section */
 
-/* Start of About Section */
-/* End of About Section */
+/* Start of Footer */
+.footer {
+    padding-top: var(--padding-20);
+    padding-bottom: var(--padding-20);
+}
+
+/* End of Footer */

@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+    .nav-link {
+        margin-left: 40px;
+        font-size: 16px;
+    }
+
+    .home-header {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .home-text {
+        font-size: 20px;
+    }
+
+    .footer-links {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}
