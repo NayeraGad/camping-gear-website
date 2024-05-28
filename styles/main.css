@@ -138,6 +138,7 @@ img {
     padding: 9px 20px;
     border: 2px solid var(--clr-white);
     background-color: var(--clr-white);
+    color: black;
     font-size: 17px;
 }
 
